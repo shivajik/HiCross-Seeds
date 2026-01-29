@@ -2,7 +2,6 @@ import type { Route } from "./+types/about";
 import { Target, Heart, Lightbulb, Users } from "lucide-react";
 import { Header } from "~/components/header/header";
 import { Footer } from "~/components/footer/footer";
-import { teamMembers } from "~/data/team";
 import styles from "./about.module.css";
 
 export function meta({}: Route.MetaArgs) {
@@ -40,39 +39,6 @@ export default function About() {
       title: "Partnership",
       description:
         "Collaborating with farmers, researchers, and communities to create shared success and sustainable growth.",
-    },
-  ];
-
-  const timeline = [
-    {
-      year: "2010",
-      title: "Foundation",
-      description: "Hicrossbrid Seeds International Pvt. Ltd. established with a vision to revolutionize seed quality in agriculture.",
-    },
-    {
-      year: "2015",
-      title: "Research Expansion",
-      description: "Opened state-of-the-art R&D facility in Hyderabad, launching our hybrid seed development program.",
-    },
-    {
-      year: "2018",
-      title: "Product Range Expansion",
-      description: "Expanded product portfolio to include paddy, cereal, oilseed, and fodder varieties.",
-    },
-    {
-      year: "2020",
-      title: "Quality Certification",
-      description: "Achieved international quality certifications, strengthening our commitment to excellence.",
-    },
-    {
-      year: "2022",
-      title: "Market Leadership",
-      description: "Became a leading supplier of hybrid seeds across multiple crop categories in India.",
-    },
-    {
-      year: "2024",
-      title: "Innovation & Growth",
-      description: "Continued innovation with new disease-resistant varieties and sustainable farming solutions.",
     },
   ];
 
@@ -154,40 +120,6 @@ export default function About() {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2 style={{ textAlign: "center", marginBottom: "var(--space-6)", fontSize: "var(--font-size-fluid-2)" }}>
-            Our Journey
-          </h2>
-          <div className={styles.timeline}>
-            {timeline.map((item) => (
-              <div key={item.year} className={styles.timelineItem}>
-                <div className={styles.timelineYear}>{item.year}</div>
-                <div className={styles.timelineContent}>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className={styles.section}>
-          <h2 style={{ textAlign: "center", marginBottom: "var(--space-6)", fontSize: "var(--font-size-fluid-2)" }}>
-            Leadership Team
-          </h2>
-          <div className={styles.teamGrid}>
-            {teamMembers.map((member) => (
-              <div key={member.id} className={styles.teamCard}>
-                <img src={member.imageUrl} alt={member.name} className={styles.teamImage} />
-                <div className={styles.teamInfo}>
-                  <h3>{member.name}</h3>
-                  <div className={styles.teamPosition}>{member.position}</div>
-                  <p className={styles.teamBio}>{member.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
       </main>
 
       <Footer />
