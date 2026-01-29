@@ -143,7 +143,7 @@
 
 .megaMenu {
   position: fixed;
-  top: calc(100% + var(--space-4));
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100vw - 2 * var(--space-6));
@@ -156,6 +156,17 @@
               visibility 0.25s;
   z-index: 1000;
   pointer-events: none;
+  padding-top: var(--space-2);
+}
+
+.megaMenu::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--space-4));
+  left: 0;
+  right: 0;
+  height: calc(var(--space-4) + var(--space-2));
+  background: transparent;
 }
 
 .navItem:hover .megaMenu {

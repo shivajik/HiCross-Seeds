@@ -113,7 +113,11 @@ export function Header() {
                 </Link>
                 
                 {item.hasMegaMenu && productsDropdown && (
-                  <div className={styles.megaMenu}>
+                  <div 
+                    className={styles.megaMenu}
+                    onMouseEnter={() => setProductsDropdown(true)}
+                    onMouseLeave={() => setProductsDropdown(false)}
+                  >
                     <div className={styles.megaMenuContent}>
                       <div className={styles.megaMenuContainer}>
                       <div className={styles.megaMenuHeader}>
