@@ -56,7 +56,6 @@ export function Header() {
       hasMegaMenu: true,
     },
     { path: "/quality", label: "R&D & Quality" },
-    { path: "/blog", label: "Knowledge Center" },
     { path: "/careers", label: "Careers" },
     { path: "/contact", label: "Contact" },
   ];
