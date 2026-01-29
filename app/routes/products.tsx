@@ -1,5 +1,6 @@
 import type { Route } from "./+types/products";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router";
 import classNames from "classnames";
 import { Header } from "~/components/header/header";
 import { Footer } from "~/components/footer/footer";
@@ -18,7 +19,15 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Products() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const categoryFromUrl = searchParams.get("category");
+  const [selectedCategory, setSelectedCategory] = useState(categoryFromUrl || "All");
+
+  useEffect(() => {
+    if (categoryFromUrl && productCategories.includes(categoryFromUrl)) {
+      setSelectedCategory(categoryFromUrl);
+    }
+  }, [categoryFromUrl]);
 
   const filteredProducts =
     selectedCategory === "All" ? products : products.filter((p) => p.category === selectedCategory);
