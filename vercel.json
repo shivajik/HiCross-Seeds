@@ -4,7 +4,7 @@
   "framework": "react-router",
   "headers": [
     {
-      "source": "/(fonts|gallery|products|.*\\.(js|css|png|jpg|svg))$",
+      "source": "/(.*\\.(?:js|css|png|jpg|svg|woff2|woff|ttf))$",
       "headers": [
         {
           "key": "Cache-Control",
