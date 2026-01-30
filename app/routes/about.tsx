@@ -8,9 +8,16 @@ export function meta({}: Route.MetaArgs) {
   return [
     { title: "About Us - HiCross Seeds | Our Story & Mission" },
     {
-      name: "description",
-      content:
-        "Learn about Hicrossbrid Seeds International Pvt. Ltd. - our journey in seed manufacturing, our commitment to quality, and the team driving agricultural innovation.",
+      name: "keywords",
+      content: "about HiCross Seeds, seed manufacturing Hyderabad, agricultural innovation, sustainable farming, seed quality control",
+    },
+    {
+      property: "og:title",
+      content: "About Us - HiCross Seeds | Our Story & Mission",
+    },
+    {
+      property: "og:type",
+      content: "website",
     },
   ];
 }

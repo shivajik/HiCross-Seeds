@@ -10,9 +10,16 @@ export function meta({}: Route.MetaArgs) {
   return [
     { title: "Careers - Join Our Team | HiCross Seeds" },
     {
-      name: "description",
-      content:
-        "Explore career opportunities at Hicrossbrid Seeds International Pvt. Ltd. Join our team of passionate professionals dedicated to agricultural innovation and excellence.",
+      name: "keywords",
+      content: "agriculture jobs Hyderabad, seed industry careers, farming jobs India, HiCross Seeds careers",
+    },
+    {
+      property: "og:title",
+      content: "Careers - Join Our Team | HiCross Seeds",
+    },
+    {
+      property: "og:type",
+      content: "website",
     },
   ];
 }

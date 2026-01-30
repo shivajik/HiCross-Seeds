@@ -7,8 +7,23 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Gallery - HiCross Seeds" },
-    { name: "description", content: "Explore our agricultural fields and seed processing facilities." },
+    { title: "Gallery - HiCross Seeds | Agricultural Fields & Processing" },
+    {
+      name: "description",
+      content: "Explore our agricultural fields and seed processing facilities. See our commitment to quality in action.",
+    },
+    {
+      name: "keywords",
+      content: "agriculture gallery, seed processing, farming photos, HiCross Seeds, research fields",
+    },
+    {
+      property: "og:title",
+      content: "Gallery - HiCross Seeds | Agricultural Fields & Processing",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
   ];
 }
 
@@ -65,7 +80,7 @@ export default function Gallery() {
           <div className={styles.grid}>
             {images.map((src, index) => (
               <div key={index} className={styles.thumbnailWrapper} onClick={() => openLightbox(index)}>
-                <img src={src} alt={`Gallery image ${index + 1}`} className={styles.thumbnail} />
+                <img src={src} alt={`HiCross Seeds field and research - Image ${index + 1}`} className={styles.thumbnail} loading="lazy" />
                 <div className={styles.overlay}>
                   <span>View Full Size</span>
                 </div>

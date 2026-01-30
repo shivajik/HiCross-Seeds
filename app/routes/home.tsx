@@ -27,7 +27,23 @@ export function meta({}: Route.MetaArgs) {
     {
       name: "keywords",
       content:
-        "seeds, agriculture, farming, paddy seeds, maize seeds, hybrid seeds, seed manufacturer, sustainable agriculture, HiCross Seeds, Telangana",
+        "seeds, agriculture, farming, paddy seeds, maize seeds, hybrid seeds, seed manufacturer, sustainable agriculture, HiCross Seeds, Telangana, Hyderabad, high yield seeds",
+    },
+    {
+      property: "og:image",
+      content: "/logo.png",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:title",
+      content: "HiCross Seeds - Premium Quality Seeds for Sustainable Agriculture",
+    },
+    {
+      name: "twitter:description",
+      content: "Hicrossbrid Seeds International Pvt. Ltd. - Leading seed manufacturer offering premium quality seeds.",
     },
   ];
 }

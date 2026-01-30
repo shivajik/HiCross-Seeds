@@ -12,9 +12,16 @@ export function meta({}: Route.MetaArgs) {
   return [
     { title: "Contact Us - Get in Touch | HiCross Seeds" },
     {
-      name: "description",
-      content:
-        "Contact Hicrossbrid Seeds International Pvt. Ltd. for inquiries, support, or partnership opportunities. Our team is ready to assist you.",
+      name: "keywords",
+      content: "contact HiCross Seeds, seed supplier Hyderabad, agricultural partnership, seed inquiry",
+    },
+    {
+      property: "og:title",
+      content: "Contact Us - Get in Touch | HiCross Seeds",
+    },
+    {
+      property: "og:type",
+      content: "website",
     },
   ];
 }

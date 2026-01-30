@@ -11,9 +11,16 @@ export function meta({}: Route.MetaArgs) {
   return [
     { title: "Our Products - Premium Quality Seeds | HiCross Seeds" },
     {
-      name: "description",
-      content:
-        "Explore our extensive range of premium paddy, maize, wheat, mustard, sunflower, jowar, bajra and fodder seeds. Certified quality with superior germination rates.",
+      name: "keywords",
+      content: "hybrid paddy seeds, maize seeds, wheat seeds, vegetable seeds, high yield seeds, certified seeds India",
+    },
+    {
+      property: "og:title",
+      content: "Our Products - Premium Quality Seeds | HiCross Seeds",
+    },
+    {
+      property: "og:type",
+      content: "website",
     },
   ];
 }

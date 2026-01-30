@@ -8,9 +8,16 @@ export function meta({}: Route.MetaArgs) {
   return [
     { title: "Research & Development, Quality Assurance | HiCross Seeds" },
     {
-      name: "description",
-      content:
-        "Discover our state-of-the-art R&D facilities, rigorous quality testing protocols, and international certifications ensuring superior seed quality.",
+      name: "keywords",
+      content: "seed R&D, seed quality testing, ISO certified seeds, seed lab Hyderabad, agricultural research",
+    },
+    {
+      property: "og:title",
+      content: "Research & Development, Quality Assurance | HiCross Seeds",
+    },
+    {
+      property: "og:type",
+      content: "website",
     },
   ];
 }

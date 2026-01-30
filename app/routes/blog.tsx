@@ -11,9 +11,16 @@ export function meta({}: Route.MetaArgs) {
   return [
     { title: "Knowledge Center - Farming Tips & Guides | HiCross Seeds" },
     {
-      name: "description",
-      content:
-        "Expert farming advice, seed management tips, and agricultural insights. Learn best practices for maximizing crop yields and sustainable farming.",
+      name: "keywords",
+      content: "farming tips, agriculture guide, seed management, crop yield optimization, sustainable farming India",
+    },
+    {
+      property: "og:title",
+      content: "Knowledge Center - Farming Tips & Guides | HiCross Seeds",
+    },
+    {
+      property: "og:type",
+      content: "website",
     },
   ];
 }
