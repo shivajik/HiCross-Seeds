@@ -7,7 +7,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Image Gallery - HiCross Seeds" },
+    { title: "Gallery - HiCross Seeds" },
     { name: "description", content: "Explore our agricultural fields and seed processing facilities." },
   ];
 }
@@ -55,7 +55,7 @@ export default function Gallery() {
       <main className={styles.main}>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>Image Gallery</h1>
+            <h1 className={styles.heroTitle}>Gallery</h1>
             <p className={styles.heroSubtitle}>
               A glimpse into our fields, research, and processing excellence
             </p>
