@@ -13,6 +13,7 @@
   background: linear-gradient(135deg, var(--color-accent-3) 0%, var(--color-accent-5) 100%);
   padding: var(--space-9) var(--space-6);
   text-align: center;
+  margin-bottom: var(--space-8);
 }
 
 .heroContent {
