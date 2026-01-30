@@ -54,11 +54,15 @@ export default function Gallery() {
       <Header />
       <main className={styles.main}>
         <section className={styles.hero}>
-          <h1 className={styles.title}>Image Gallery</h1>
-          <p className={styles.subtitle}>A glimpse into our fields, research, and processing excellence</p>
+          <div className={styles.heroContent}>
+            <h1 className={styles.heroTitle}>Image Gallery</h1>
+            <p className={styles.heroSubtitle}>
+              A glimpse into our fields, research, and processing excellence
+            </p>
+          </div>
         </section>
 
-        <section className={styles.gallerySection}>
+        <section className={styles.section}>
           <div className={styles.grid}>
             {images.map((src, index) => (
               <div key={index} className={styles.thumbnailWrapper} onClick={() => openLightbox(index)}>
