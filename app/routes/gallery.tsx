@@ -52,7 +52,7 @@ export default function Gallery() {
   return (
     <div className={styles.container}>
       <Header />
-      <main className={styles.main}>
+      <main>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>Gallery</h1>
