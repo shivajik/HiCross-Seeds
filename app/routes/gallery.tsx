@@ -17,7 +17,6 @@ const images = [
   "/gallery/HiCrossBridSeeds_(2)_1769792745654.jpg",
   "/gallery/HiCrossBridSeeds_(7)_1769792745654.jpg",
   "/gallery/HiCrossBridSeeds_(12)_1769792745654.jpg",
-  "/gallery/HiCrossBridSeeds_(4)_1769792745654.jpg",
   "/gallery/HiCrossBridSeeds_(5)_1769792745654.jpg",
   "/gallery/HiCrossBridSeeds_(6)_1769792745654.jpg",
   "/gallery/HiCrossBridSeeds_(10)_1769792745654.jpg",
