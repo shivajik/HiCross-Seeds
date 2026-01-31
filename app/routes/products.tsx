@@ -68,26 +68,32 @@ export default function Products() {
           </div>
 
           <div className={styles.grid}>
-            {filteredProducts.map((product) => (
-              <article key={product.id} className={styles.productCard}>
-                <img src={product.imageUrl} alt={product.name} className={styles.productImage} />
-                <div className={styles.productContent}>
-                  <span className={styles.productCategory}>{product.category}</span>
-                  <h2 className={styles.productTitle}>{product.name}</h2>
-                  
-                  <div className={styles.productInfo}>
-                    <div className={styles.productInfoItem}>
-                      <span className={styles.productInfoLabel}>Seed Type:</span>
-                      <span className={styles.productInfoValue}>{product.seedType}</span>
-                    </div>
-                    <div className={styles.productInfoItem}>
-                      <span className={styles.productInfoLabel}>Crop:</span>
-                      <span className={styles.productInfoValue}>{product.crop}</span>
+            {filteredProducts.length > 0 ? (
+              filteredProducts.map((product) => (
+                <article key={product.id} className={styles.productCard}>
+                  <img src={product.imageUrl} alt={product.name} className={styles.productImage} />
+                  <div className={styles.productContent}>
+                    <span className={styles.productCategory}>{product.category}</span>
+                    <h2 className={styles.productTitle}>{product.name}</h2>
+
+                    <div className={styles.productInfo}>
+                      <div className={styles.productInfoItem}>
+                        <span className={styles.productInfoLabel}>Seed Type:</span>
+                        <span className={styles.productInfoValue}>{product.seedType}</span>
+                      </div>
+                      <div className={styles.productInfoItem}>
+                        <span className={styles.productInfoLabel}>Crop:</span>
+                        <span className={styles.productInfoValue}>{product.crop}</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </article>
-            ))}
+                </article>
+              ))
+            ) : (
+              <div className={styles.emptyState}>
+                <p>No products found in this category. Please check back later or try another category.</p>
+              </div>
+            )}
           </div>
         </section>
       </main>
