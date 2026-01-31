@@ -71,9 +71,12 @@ export const products: Product[] = [
   { id: "hb-vastad", name: "HB-VASTAD", category: "Hybrid Paddy Seeds", seedType: "Hybrid", crop: "Paddy", imageUrl: "/products/hb-vastad.jpg" },
 
   // Hybrid Maize Seeds
-  { id: "champion-555", name: "Champion 555", category: "Hybrid Maize Seeds", seedType: "Hybrid", crop: "Maize", imageUrl: "https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=800&q=80" },
-  { id: "bunny-999", name: "Bunny 999", category: "Hybrid Maize Seeds", seedType: "Hybrid", crop: "Maize", imageUrl: "https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=800&q=80" },
-  { id: "power-4055", name: "Power 4055", category: "Hybrid Maize Seeds", seedType: "Hybrid", crop: "Maize", imageUrl: "/products/power-4055.jpg" },
+  { id: "champion-555", name: "CHAMPION 555", category: "Hybrid Maize Seeds", seedType: "Hybrid", crop: "Maize", imageUrl: "/products/Champion_555.jpg" },
+  { id: "bunny-999", name: "BUNNY 999", category: "Hybrid Maize Seeds", seedType: "Hybrid", crop: "Maize", imageUrl: "/products/Bunny_999.jpg" },
+  { id: "power-4055", name: "POWER 4055", category: "Hybrid Maize Seeds", seedType: "Hybrid", crop: "Maize", imageUrl: "/products/Power_4055.jpg" },
+  { id: "b-4550", name: "HICROSS B-4550", category: "Hybrid Maize Seeds", seedType: "Hybrid", crop: "Maize", imageUrl: "/products/B-4550.jpg" },
+  { id: "b-5055", name: "HICROSS B-5055", category: "Hybrid Maize Seeds", seedType: "Hybrid", crop: "Maize", imageUrl: "/products/B-5055.jpg" },
+  { id: "b-5560", name: "HICROSS B-5560", category: "Hybrid Maize Seeds", seedType: "Hybrid", crop: "Maize", imageUrl: "/products/B-5560.jpg" },
 
   // Research Wheat Seeds
   { id: "hicross-3030", name: "HICROSS-3030", category: "Research Wheat Seeds", seedType: "Research", crop: "Wheat", imageUrl: "/products/hicross-3030.jpg" },
