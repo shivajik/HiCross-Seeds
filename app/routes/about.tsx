@@ -1,7 +1,8 @@
 import type { Route } from "./+types/about";
-import { Target, Heart, Lightbulb, Users } from "lucide-react";
+import { Target, Heart, Lightbulb, Users, Award } from "lucide-react";
 import { Header } from "~/components/header/header";
 import { Footer } from "~/components/footer/footer";
+import { teamMembers } from "~/data/team";
 import styles from "./about.module.css";
 
 export function meta({}: Route.MetaArgs) {
@@ -110,6 +111,34 @@ export default function About() {
               className={styles.image}
             />
           </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2 style={{ textAlign: "center", marginBottom: "var(--space-8)", fontSize: "var(--font-size-fluid-2)" }}>
+            Leadership
+          </h2>
+          {teamMembers.filter(m => m.id === "nilesh-bhosale").map(director => (
+            <div key={director.id} className={styles.contentGrid} style={{ alignItems: "center", gap: "var(--space-8)" }}>
+              <img
+                src={director.imageUrl}
+                alt={director.name}
+                className={styles.image}
+                style={{ borderRadius: "var(--radius-3)", aspectRatio: "1/1", objectFit: "cover" }}
+              />
+              <div className={styles.content}>
+                <h3 style={{ fontSize: "var(--font-size-4)", color: "var(--brand)" }}>{director.name}</h3>
+                <p style={{ fontWeight: "600", color: "var(--text-2)", marginBottom: "var(--space-2)" }}>
+                  {director.position} | {director.qualification}
+                </p>
+                <p>{director.bio}</p>
+                <p style={{ marginTop: "var(--space-4)" }}>
+                  Throughout his professional journey, Mr. Bhosale has received numerous awards and recognitions for
+                  outstanding performance, leadership excellence, and significant contributions to the seed industry.
+                  He is widely respected for his deep market knowledge, farmer-centric approach, and consistent results.
+                </p>
+              </div>
+            </div>
+          ))}
         </section>
 
         <section className={styles.section}>

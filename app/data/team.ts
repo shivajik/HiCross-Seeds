@@ -5,9 +5,18 @@ export interface TeamMember {
   bio: string;
   imageUrl: string;
   linkedin?: string;
+  qualification?: string;
 }
 
 export const teamMembers: TeamMember[] = [
+  {
+    id: "nilesh-bhosale",
+    name: "Nilesh Janardhan Bhosale",
+    position: "Director",
+    qualification: "B.Sc. Agriculture",
+    bio: "Nilesh Janardhan Bhosale is a seasoned agriculture professional with over 20 years of extensive experience in Sales and Marketing within the Indian seed industry. Currently, he serves as the Director of HiCrossBrid Seeds International Pvt. Ltd. and is actively working as the National Sales Manager (NSM) for HiCross Seeds and Vasudha Seeds. He oversees national sales operations, product positioning, and long-term business growth strategies.",
+    imageUrl: "/director-nilesh-bhosale.png",
+  },
   {
     id: "john-anderson",
     name: "John Anderson",
