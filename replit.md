@@ -48,8 +48,9 @@ Routes configured in `app/routes.ts`:
 
 ### Build & Deployment
 - **Vite** as the build tool with React Router plugin
-- **Vercel** preset configured for deployment
+- **Replit** environment — deployed on Replit with the React Router Dev workflow
 - Server-side rendering enabled with `ssr: true`
+- Dev server runs on port 5000, host 0.0.0.0, with HMR on clientPort 443
 
 ## External Dependencies
 
