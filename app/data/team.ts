@@ -10,6 +10,14 @@ export interface TeamMember {
 
 export const teamMembers: TeamMember[] = [
   {
+    id: "sreenivasula-reddy",
+    name: "B. Sreenivasula Reddy",
+    position: "Managing Director",
+    qualification: "",
+    bio: "B. Sreenivasula Reddy is the Managing Director of HiCrossBrid Seeds International Pvt. Ltd. With a strong vision for sustainable agriculture and a deep commitment to farmer welfare, he leads the company's strategic direction and growth initiatives across India.",
+    imageUrl: "/director-sreenivasula-reddy.jpg",
+  },
+  {
     id: "nilesh-bhosale",
     name: "Nilesh Janardhan Bhosale",
     position: "Director",

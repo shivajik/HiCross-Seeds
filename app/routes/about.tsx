@@ -117,28 +117,32 @@ export default function About() {
           <h2 style={{ textAlign: "center", marginBottom: "var(--space-8)", fontSize: "var(--font-size-fluid-2)" }}>
             Leadership
           </h2>
-          {teamMembers.filter(m => m.id === "nilesh-bhosale").map(director => (
-            <div key={director.id} className={styles.contentGrid} style={{ alignItems: "center", gap: "var(--space-8)" }}>
-              <img
-                src={director.imageUrl}
-                alt={director.name}
-                className={styles.image}
-                style={{ borderRadius: "var(--radius-3)", aspectRatio: "1/1", objectFit: "cover" }}
-              />
-              <div className={styles.content}>
-                <h3 style={{ fontSize: "var(--font-size-4)", color: "var(--brand)" }}>{director.name}</h3>
-                <p style={{ fontWeight: "600", color: "var(--text-2)", marginBottom: "var(--space-2)" }}>
-                  {director.position} | {director.qualification}
-                </p>
-                <p>{director.bio}</p>
-                <p style={{ marginTop: "var(--space-4)" }}>
-                  Throughout his professional journey, Mr. Bhosale has received numerous awards and recognitions for
-                  outstanding performance, leadership excellence, and significant contributions to the seed industry.
-                  He is widely respected for his deep market knowledge, farmer-centric approach, and consistent results.
-                </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-10)" }}>
+            {teamMembers.filter(m => m.id === "sreenivasula-reddy" || m.id === "nilesh-bhosale").map((director, index) => (
+              <div key={director.id} className={styles.contentGrid} style={{ alignItems: "center", gap: "var(--space-8)", direction: index % 2 === 1 ? "rtl" : "ltr" }}>
+                <img
+                  src={director.imageUrl}
+                  alt={director.name}
+                  className={styles.image}
+                  style={{ borderRadius: "var(--radius-3)", aspectRatio: "1/1", objectFit: "cover", direction: "ltr" }}
+                />
+                <div className={styles.content} style={{ direction: "ltr" }}>
+                  <h3 style={{ fontSize: "var(--font-size-4)", color: "var(--brand)" }}>{director.name}</h3>
+                  <p style={{ fontWeight: "600", color: "var(--text-2)", marginBottom: "var(--space-2)" }}>
+                    {director.position}{director.qualification ? ` | ${director.qualification}` : ""}
+                  </p>
+                  <p>{director.bio}</p>
+                  {director.id === "nilesh-bhosale" && (
+                    <p style={{ marginTop: "var(--space-4)" }}>
+                      Throughout his professional journey, Mr. Bhosale has received numerous awards and recognitions for
+                      outstanding performance, leadership excellence, and significant contributions to the seed industry.
+                      He is widely respected for his deep market knowledge, farmer-centric approach, and consistent results.
+                    </p>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </section>
 
         <section className={styles.section}>
