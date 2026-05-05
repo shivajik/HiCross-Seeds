@@ -16,10 +16,10 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "React Router Dev"
+args = "Start application"
 
 [[workflows.workflow]]
-name = "React Router Dev"
+name = "Start application"
 author = "agent"
 
 [[workflows.workflow.tasks]]
